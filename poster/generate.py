@@ -271,7 +271,7 @@ def art_strike():
     return _mini('''<rect width="300" height="62" fill="#f3e3d3"/>
 <g fill="#31405c"><circle cx="36" cy="34" r="6"/><rect x="29" y="40" width="14" height="14"/><circle cx="66" cy="36" r="6"/><rect x="59" y="42" width="14" height="12"/><circle cx="96" cy="34" r="6"/><rect x="89" y="40" width="14" height="14"/></g>
 <g><rect x="126" y="8" width="3" height="34" fill="#7a4a21"/><path d="M129 8 h44 l-8 9 l8 9 h-44 Z" fill="#b02a24"/></g>
-<text x="192" y="38" font-family="Georgia" font-size="19" font-weight="bold" fill="#7a1d18">100 SQUARES</text>''')
+<text x="178" y="38" font-family="Georgia" font-size="17" font-weight="bold" fill="#7a1d18">100 SQUARES</text>''')
 
 def art_pill():
     return _mini('''<rect width="300" height="62" fill="#e5f0ea"/>
@@ -317,7 +317,10 @@ def world_map():
     parts.append('<ellipse cx="278" cy="100" rx="6" ry="3" fill="#d9c491"/>')
     parts.append('<ellipse cx="322" cy="146" rx="6" ry="2.6" fill="#d9c491"/>')
     for n, (x, y) in PINS.items():
-        parts.append(f'<circle cx="{x}" cy="{y}" r="7.6" fill="#b02a24" stroke="#f6efdb" stroke-width="1.4"/>')
+        if n <= 3:  # the three leads get a gold ring, as the caption's legend says
+            parts.append(f'<circle cx="{x}" cy="{y}" r="9.2" fill="#b02a24" stroke="#ffd76a" stroke-width="2.4"/>')
+        else:
+            parts.append(f'<circle cx="{x}" cy="{y}" r="7.6" fill="#b02a24" stroke="#f6efdb" stroke-width="1.4"/>')
         parts.append(f'<text x="{x}" y="{y + 2.8}" text-anchor="middle" font-family="Arial" '
                      f'font-size="8.6" font-weight="bold" fill="#fff">{n}</text>')
     parts.append('<text x="300" y="30" font-family="Arial" font-size="7.6" fill="#bcd">SPACE ↑</text>')
@@ -336,20 +339,20 @@ body { width:1024px; height:1024px; overflow:hidden; background:#f6efdb; color:#
 h1.mast { font-family:Georgia,'Liberation Serif',serif; font-size:47px; text-align:center;
   letter-spacing:.2px; line-height:1.02; margin-top:1px; }
 .strap { text-align:center; font-family:Georgia,'Liberation Serif',serif; font-style:italic;
-  font-size:15px; color:#b02a24; border-bottom:3px double #17263f; padding-bottom:4px; }
+  font-size:15px; color:#b02a24; border-bottom:3px double #17263f; padding-bottom:3px; }
 .nums { display:flex; border-bottom:1.6px solid #17263f; }
 .nums div { flex:1; text-align:center; padding:2px 4px 3px; border-right:1px solid #c9bd97; }
 .nums div:last-child { border-right:none; }
-.nums b { font-family:Georgia,'Liberation Serif',serif; font-size:20px; color:#b02a24; display:block; }
+.nums b { font-family:Georgia,'Liberation Serif',serif; font-size:19px; color:#b02a24; display:block; }
 .nums span { font-size:9.4px; line-height:1.12; display:block; color:#3c4657; }
-.regions { display:flex; gap:4px; margin:4px 0 5px; align-items:center; }
+.regions { display:flex; gap:4px; margin:3px 0 4px; align-items:center; }
 .regions .lab { font-size:9.2px; font-weight:bold; letter-spacing:.8px; color:#5c5540; margin-right:1px; }
 .regions .chip { color:#fff; font-size:10.2px; font-weight:bold; letter-spacing:.5px; padding:2px 7px; white-space:nowrap; }
 .regions .when { margin-left:auto; font-size:9.2px; color:#5c5540; letter-spacing:.4px; white-space:nowrap; }
 .row { display:flex; gap:8px; }
 .card { border:1.4px solid #17263f; background:#fdfaf0; overflow:hidden; }
 .card .art svg { display:block; width:100%; }
-.lead .art svg { height:76px; }
+.lead .art svg { height:100px; }
 .feat .art svg { height:30px; }
 .lead { flex:1; }
 .lead .txt { padding:5px 9px 6px; }
@@ -361,19 +364,19 @@ h1.mast { font-family:Georgia,'Liberation Serif',serif; font-size:47px; text-ali
 .feat h3 { font-family:Georgia,'Liberation Serif',serif; font-size:14px; line-height:1.12; margin:1px 0 2px; }
 .feat p { font-size:10.3px; line-height:1.2; color:#2c3648; }
 .num { color:#b02a24; }
-.bottom { display:flex; gap:8px; margin-top:6px; }
-.mapbox { width:342px; border:1.4px solid #17263f; background:#22354f; }
-.mapbox svg { height:126px; width:100%; display:block; }
+.bottom { display:flex; gap:8px; margin-top:5px; }
+.mapbox { width:300px; border:1.4px solid #17263f; background:#22354f; }
+.mapbox svg { height:168px; width:100%; display:block; }
 .mapbox .cap { color:#e8e2cc; font-size:9.2px; padding:3px 8px 4px; letter-spacing:.7px; }
 .mapbox .cap b { color:#fff; letter-spacing:1.2px; }
 .briefs { flex:1; border-top:2px solid #b02a24; padding-top:4px; }
 .briefs h4 { font-size:12px; letter-spacing:1.1px; color:#7a1d18; margin-bottom:3px; }
 .briefs .cols { display:flex; gap:14px; }
 .briefs ul { list-style:none; flex:1; }
-.briefs li { font-size:10px; line-height:1.14; margin-bottom:1.2px; color:#2c3648; }
+.briefs li { font-size:10px; line-height:1.10; margin-bottom:1px; color:#2c3648; }
 .briefs li b { color:#17263f; }
 .briefs li .n { color:#b02a24; font-weight:bold; }
-.datecheck { margin-top:5px; border:1.6px solid #b02a24; padding:3px 9px; font-size:10.3px;
+.datecheck { margin-top:4px; border:1.6px solid #b02a24; padding:3px 9px; font-size:10.3px;
   line-height:1.32; color:#4a2320; background:#fbf3e4; }
 .datecheck b { color:#b02a24; letter-spacing:1px; }
 .foot { margin-top:4px; font-size:9.2px; color:#5c5540; }
@@ -421,11 +424,11 @@ def build_html():
 <div class="nums">{nums}</div>
 <div class="regions"><span class="lab">STORIES BY REGION</span>{chips}<span class="when">ALL STORIES: FRI 20 NOV 2026, ANY TIME ZONE</span></div>
 <div class="row">{leads}</div>
-<div class="row" style="margin-top:6px">{feats1}</div>
+<div class="row" style="margin-top:5px">{feats1}</div>
 
-<div class="row" style="margin-top:6px">{feats2}</div>
+<div class="row" style="margin-top:5px">{feats2}</div>
 <div class="bottom">
-  <div class="mapbox">{world_map()}<div class="cap"><b>WHERE IT HAPPENED</b> · PINS 1–13 MARK THE DRAWN STORIES · POSITIONS APPROXIMATE</div></div>
+  <div class="mapbox">{world_map()}<div class="cap"><b>WHERE IT HAPPENED</b> · PINS 1–3 LEADS (GOLD RING) · 4–13 FEATURES · POSITIONS APPROXIMATE</div></div>
   <div class="briefs"><h4>ALSO ON FRIDAY 20 NOVEMBER — {len(BRIEFS)} MORE STORIES</h4>
   <div class="cols"><ul>{col1}</ul><ul>{col2}</ul></div></div>
 </div>
