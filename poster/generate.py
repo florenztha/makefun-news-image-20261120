@@ -31,21 +31,22 @@ LEADS = [
                 "rescue teams deployed. No major damage by midday. (IMD, Reuters)",
     },
     {
-        "n": 3, "region": "EU", "kicker": "ANTALYA, TÜRKİYE · CLIMATE",
-        "art": "cop31",
-        "headline": "COP31 reaches its final day deadlocked",
-        "body": "The closing draft omits a fossil-fuel phase-out while a $120bn "
-                "adaptation-finance gap stays open; the hosts push a “35 by 35” "
-                "clean-power goal. (UN News, Reuters)",
+        "n": 3, "region": "AP", "kicker": "SEOUL / TOKYO · MARKETS",
+        "art": "markets_lead",
+        "headline": "AI sell-off sinks Asia's markets",
+        "body": "Chipmakers led the slide after Wall Street's fall; the Nikkei "
+                "lost 4.9% and the KOSPI 5.4% at intraday lows — Asia's worst "
+                "week since 2020. (Reuters)",
     },
 ]
 
 FEATURES = [
     {
-        "n": 4, "region": "AP", "kicker": "SEOUL / TOKYO · MARKETS", "art": "markets",
-        "headline": "AI sell-off sinks Asia's markets",
-        "body": "Nikkei −4.9% and KOSPI −5.4% at intraday lows, TAIEX −6.8%; "
-                "Asia's worst week since 2020. (Reuters)",
+        "n": 4, "region": "EU", "kicker": "ANTALYA, TÜRKİYE · CLIMATE", "art": "cop31mini",
+        "headline": "COP31 reaches its final day deadlocked",
+        "body": "<span class=\"tag amber\">DRAFT</span> The closing text omits a "
+                "fossil-fuel phase-out while a $120bn adaptation-finance gap "
+                "stays open. (UN News, Reuters)",
     },
     {
         "n": 5, "region": "WS", "kicker": "MERCURY · SPACE", "art": "mercury",
@@ -57,7 +58,7 @@ FEATURES = [
         "n": 6, "region": "EU", "kicker": "BRUSSELS · EUROPE", "art": "brussels",
         "headline": "Burnham holds first EU–UK reset summit",
         "body": "Costa & von der Leyen host the UK PM; agrifood and "
-                "carbon-market links eyed. (EU Council)",
+                "carbon links eyed. (EU Council)",
     },
     {
         "n": 7, "region": "AP", "kicker": "TOKYO · ECONOMY", "art": "cpi",
@@ -86,14 +87,14 @@ FEATURES = [
     {
         "n": 11, "region": "AF", "kicker": "SENEGAL · MIGRATION", "art": "boat",
         "headline": "Migrant boat capsizes off Yenne; 4 dead",
-        "body": "Dozens are missing from 50–100 aboard, as Canary "
+        "body": "Dozens missing from 50–100 aboard, as Canary "
                 "arrivals surge. (Al Jazeera)",
     },
     {
         "n": 12, "region": "EU", "kicker": "ROME · LABOUR", "art": "strike",
         "headline": "Italy's CGIL holds 24-hour general strike",
         "body": "Unions rally in some 100 squares against the 2027 "
-                "budget; transit is hit. (CGIL, AFP)",
+                "budget; transit hit. (CGIL, AFP)",
     },
     {
         "n": 13, "region": "EU", "kicker": "BARCELONA · HEALTH", "art": "pill",
@@ -106,7 +107,7 @@ FEATURES = [
 BRIEFS = [
     (14, "AP", "SHENZHEN", "Trump, Xi & Putin publish a joint peace declaration a day after their summit (AP)"),
     (15, "AP", "COX'S BAZAR", "Rohingya camps weep and pray after Thursday's ICJ genocide ruling (Al Jazeera)"),
-    (16, "ME", "HORMUZ", "Four attacks on vessels in 96 hours; 46 ships wait as the strait stays shut (UKMTO)"),
+    (16, "ME", "HORMUZ", "<span class=\"tag\">CLAIM</span> Four attacks on vessels in 96 hours; 46 ships wait as the strait stays shut (UKMTO)"),
     (17, "ME", "GAZA", "Aid groups score the peace plan's implementation at 4 of 26 points (UN News)"),
     (18, "AP", "SEOUL", "Ruling party adopts a bid to impeach Chief Justice Cho Hee-dae (SBS)"),
     (19, "AF", "BLANTYRE", "Malawi fuel crisis: night queues and a 20-litre daily cap (Al Jazeera)"),
@@ -177,6 +178,9 @@ def art_kyiv(w, h):
 <rect x="0" y="94" width="300" height="24" fill="#1d3a5f"/>
 <path d="M0 96 Q40 90 78 96 T160 96 T240 96 T300 96" stroke="#7fb2d9" fill="none" stroke-width="2"/>
 <path d="M28 96 L60 78 L92 96 M118 96 L150 78 L182 96 M208 96 L240 78 L272 96" stroke="#e8e2cc" fill="none" stroke-width="3"/>
+<text x="10" y="27" font-family="Georgia" font-size="24" font-weight="bold" fill="#ffffff">KYIV</text>
+<rect x="8" y="33" width="138" height="15" fill="#b02a24"/>
+<text x="13" y="44" font-family="Arial" font-size="10.5" font-weight="bold" fill="#ffffff">MISSILE BARRAGE</text>
 <rect x="8" y="98" width="172" height="16" fill="#0a1424"/>
 <text x="14" y="110" font-family="Arial" font-size="10.5" font-weight="bold" fill="#ff8d80">01:25 LOCAL · 3 BRIDGES HIT</text>
 </svg>'''
@@ -191,9 +195,11 @@ def art_akvan(w, h):
 <circle cx="192" cy="52" r="6" fill="#ffffff"/>
 <circle cx="128" cy="66" r="5" fill="#b02a24"/>
 <text x="86" y="60" font-family="Arial" font-size="10" font-weight="bold" fill="#7a1d18">GOPALPUR</text>
-<text x="196" y="104" font-family="Arial" font-size="10" fill="#eaf6f5">BAY OF BENGAL</text>
-<rect x="8" y="8" width="122" height="17" fill="#b02a24"/>
-<text x="14" y="20" font-family="Arial" font-size="10.5" font-weight="bold" fill="#fff">LANDFALL 08:30 IST</text>
+<text x="160" y="104" font-family="Arial" font-size="10" fill="#eaf6f5">BAY OF BENGAL</text>
+<rect x="8" y="8" width="140" height="21" fill="#b02a24"/>
+<text x="13" y="22" font-family="Arial" font-size="12" font-weight="bold" fill="#fff">LANDFALL 08:30 IST</text>
+<text x="298" y="24" text-anchor="end" font-family="Georgia" font-size="15" font-weight="bold" fill="#ffffff">CYCLONE AKVAN</text>
+<text x="298" y="112" text-anchor="end" font-family="Arial" font-size="11" font-weight="bold" fill="#eaf6f5">70–80 KM/H AT COAST</text>
 </svg>'''
 
 def art_cop31(w, h):
@@ -280,9 +286,31 @@ def art_pill():
 <path d="M150 30 h26" stroke="#2e6b34" stroke-width="3"/><path d="M170 24 l8 6 l-8 6 Z" fill="#2e6b34"/>
 <text x="228" y="38" font-family="Georgia" font-size="20" font-weight="bold" fill="#20503a">60.7%</text>''')
 
+def art_markets_lead(w, h):
+    rows = [("NIKKEI", "−4.9%"), ("KOSPI", "−5.4%"), ("TAIEX", "−6.8%"), ("HANG SENG", "−2.0%")]
+    parts = [f'''<svg viewBox="0 0 300 118" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="300" height="118" fill="#231d26"/>
+<polyline points="8,10 60,16 112,22 164,34 216,40 262,50 292,54" fill="none" stroke="#e04a3a" stroke-width="3.4"/>
+<text x="10" y="30" font-family="Georgia" font-size="25" font-weight="bold" fill="#ffffff">AI SELL-OFF</text>
+<text x="11" y="45" font-family="Arial" font-size="10" fill="#cbb">ASIA · INTRADAY LOWS</text>''']
+    for i, (name, val) in enumerate(rows):
+        y = 66 + i * 13
+        parts.append(f'<text x="150" y="{y}" font-family="Arial" font-size="11.5" font-weight="bold" fill="#e8e2cc">{name}</text>')
+        parts.append(f'<text x="292" y="{y}" text-anchor="end" font-family="Arial" font-size="11.5" font-weight="bold" fill="#ff8d80">{val}</text>')
+    parts.append('</svg>')
+    return "".join(parts)
+
+def art_cop31mini():
+    return _mini('''<rect width="300" height="62" fill="#dcead9"/>
+<circle cx="34" cy="31" r="19" fill="#3d7ca8"/><path d="M22 22 q8 -5 13 1 q-7 4 -13 -1 M30 42 q9 5 15 -1 q-8 -5 -15 1" fill="#69a35f"/>
+<rect x="66" y="10" width="8" height="38" rx="4" fill="#e8e2cc" stroke="#8a845f"/><path d="M70 16 v24" stroke="#d2543c" stroke-width="3.4"/><circle cx="70" cy="52" r="6" fill="#d2543c"/>
+<text x="92" y="30" font-family="Georgia" font-size="17" font-weight="bold" fill="#7a1d18">$120BN GAP</text>
+<text x="92" y="47" font-family="Arial" font-size="10" font-weight="bold" fill="#40513f">FINAL DAY · ANTALYA</text>''')
+
 ART = {
     "kyiv": lambda: art_kyiv(300, 118), "akvan": lambda: art_akvan(300, 118),
-    "cop31": lambda: art_cop31(300, 118), "markets": art_markets,
+    "cop31": lambda: art_cop31(300, 118), "markets_lead": lambda: art_markets_lead(300, 118),
+    "cop31mini": art_cop31mini, "markets": art_markets,
     "mercury": art_mercury, "brussels": art_brussels, "cpi": art_cpi,
     "rates": art_rates, "cricket": art_cricket, "ballot": art_ballot,
     "boat": art_boat, "strike": art_strike, "pill": art_pill,
@@ -293,7 +321,7 @@ ART = {
 # the thirteen drawn stories. Positions are approximate, as the caption says.
 
 PINS = {  # story number -> (x, y) on the 340x168 map
-    1: (203, 40), 2: (236, 82), 3: (192, 56), 4: (292, 44), 5: (326, 12),
+    1: (203, 40), 2: (236, 82), 3: (292, 44), 4: (192, 56), 5: (326, 12),
     6: (168, 36), 7: (300, 54), 8: (280, 50), 9: (328, 150), 10: (36, 82),
     11: (150, 74), 12: (180, 50), 13: (162, 48),
 }
@@ -352,8 +380,8 @@ h1.mast { font-family:Georgia,'Liberation Serif',serif; font-size:47px; text-ali
 .row { display:flex; gap:8px; }
 .card { border:1.4px solid #17263f; background:#fdfaf0; overflow:hidden; }
 .card .art svg { display:block; width:100%; }
-.lead .art svg { height:100px; }
-.feat .art svg { height:30px; }
+.lead .art svg { height:94px; }
+.feat .art svg { height:28px; }
 .lead { flex:1; }
 .lead .txt { padding:5px 9px 6px; }
 .kick { font-size:9.8px; font-weight:bold; letter-spacing:1px; color:#17616b; }
@@ -364,7 +392,7 @@ h1.mast { font-family:Georgia,'Liberation Serif',serif; font-size:47px; text-ali
 .feat h3 { font-family:Georgia,'Liberation Serif',serif; font-size:14px; line-height:1.12; margin:1px 0 2px; }
 .feat p { font-size:10.3px; line-height:1.2; color:#2c3648; }
 .num { color:#b02a24; }
-.bottom { display:flex; gap:8px; margin-top:5px; }
+.bottom { display:flex; gap:8px; margin-top:4px; }
 .mapbox { width:300px; border:1.4px solid #17263f; background:#22354f; }
 .mapbox svg { height:168px; width:100%; display:block; }
 .mapbox .cap { color:#e8e2cc; font-size:9.2px; padding:3px 8px 4px; letter-spacing:.7px; }
@@ -373,10 +401,12 @@ h1.mast { font-family:Georgia,'Liberation Serif',serif; font-size:47px; text-ali
 .briefs h4 { font-size:12px; letter-spacing:1.1px; color:#7a1d18; margin-bottom:3px; }
 .briefs .cols { display:flex; gap:14px; }
 .briefs ul { list-style:none; flex:1; }
-.briefs li { font-size:10px; line-height:1.10; margin-bottom:1px; color:#2c3648; }
+.briefs li { font-size:10.2px; line-height:1.09; margin-bottom:1px; color:#2c3648; }
+.tag { background:#b02a24; color:#fff; font-size:7.8px; font-weight:bold; letter-spacing:.5px; padding:0 3px; }
+.tag.amber { background:#b97d1e; }
 .briefs li b { color:#17263f; }
 .briefs li .n { color:#b02a24; font-weight:bold; }
-.datecheck { margin-top:4px; border:1.6px solid #b02a24; padding:3px 9px; font-size:10.3px;
+.datecheck { margin-top:3px; border:1.6px solid #b02a24; padding:3px 9px; font-size:10.3px;
   line-height:1.32; color:#4a2320; background:#fbf3e4; }
 .datecheck b { color:#b02a24; letter-spacing:1px; }
 .foot { margin-top:4px; font-size:9.2px; color:#5c5540; }
@@ -420,7 +450,7 @@ def build_html():
 <body>
 <div class="kicker"><span>THE WORLD IN ONE DAY</span><span class="r">FRIDAY'S NEWS · ONE PAGE · {total} STORIES · 6 CONTINENTS</span></div>
 <h1 class="mast">Friday 20 November 2026</h1>
-<div class="strap">Missiles hit Kyiv's bridges · Cyclone Akvan ashore in India · COP31 deadlocked on its final day · An AI sell-off sinks Asia</div>
+<div class="strap">Missiles hit Kyiv's bridges · Cyclone Akvan ashore in India · An AI sell-off sinks Asia · COP31 deadlocked on its final day</div>
 <div class="nums">{nums}</div>
 <div class="regions"><span class="lab">STORIES BY REGION</span>{chips}<span class="when">ALL STORIES: FRI 20 NOV 2026, ANY TIME ZONE</span></div>
 <div class="row">{leads}</div>
