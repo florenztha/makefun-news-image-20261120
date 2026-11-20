@@ -3,7 +3,7 @@
 - **Day summed up:** Friday 20 November 2026 (events that happened, or were
   first reported, that day in at least one time zone).
 - **Stories:** 36 total — 3 leads and 10 features drawn as original vector
-  scenes, plus 23 one-line briefs. Region counts on the poster are computed
+  scenes, plus 23 briefs. Region counts on the poster are computed
   from the story data in `poster/generate.py`, so the region bar always
   matches the stories printed.
 - **Figures cross-checked while building** (20 Nov 2026 reporting):
