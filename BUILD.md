@@ -18,3 +18,15 @@
   1 MiB gate without quantising.
 - **Determinism:** `main.ts` only copies the baked `entry.png`; two local
   runs were compared with sha256 and are byte-identical.
+- **V6 revision (2026-11-21):** same 36 stories, facts and dates as V4.
+  Lead order is now Kyiv · Akvan · AI sell-off — the sell-off panel carries
+  its intraday index table (Nikkei −4.9%, KOSPI −5.4%, TAIEX −6.8%,
+  Hang Seng −2.0%) — and COP31 moves to a feature card behind the EU–UK
+  reset summit, following a teardown of the live top 10 (7 of 10 lead with
+  the sell-off; 8 of 10 keep COP31 as a feature). Each lead panel carries a
+  small tag naming the basis of its figures (MAYOR'S COUNT · WEATHER
+  OFFICE · INTRADAY LOWS). The world map is drawn from real lon/lat
+  coastline coordinates (the V5 map code) with pins renumbered to the V6
+  story order. `entry.png` is 401,475 bytes; three renders and two
+  `main.ts` runs are byte-identical (sha256
+  61664b3f5ca5a11aa37e1f263da8f449ce5e9f73b92b8b029d5a9f9be4124921).
